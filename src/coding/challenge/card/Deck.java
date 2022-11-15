@@ -1,5 +1,6 @@
 package coding.challenge.card;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
@@ -17,7 +18,7 @@ public class Deck<T extends Card> implements Iterable<T> {
 	}
 	
 	public List<T> dealHand(int numberOfCards) {
-		//손을 다루는 코드 구현
+		//손을 다루는 코드 구현 n명에게 카드 고르게 분배
 		return null;
 	}
 	
@@ -30,8 +31,8 @@ public class Deck<T extends Card> implements Iterable<T> {
 		return cards.size();
 	}
 	
-	public void removeCards(List<T> cards) {
-		//카드를 제거하는 코드 구현
+	public void removeCards(List<T> cards, int index) {
+		cards.remove(index);
 	}
 	
 	@Override
